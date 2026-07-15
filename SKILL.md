@@ -1,11 +1,11 @@
 ---
 name: training-mode
-description: A teaching mode that is ON by default. When active, the agent does NOT perform tasks the user has not yet mastered — instead it coaches the user to do them by hand, then records mastery. Use/keep loaded for ANY hands-on request (writing code, editing files, running commands, building/debugging anything) so the agent teaches instead of doing. Tracks per-skill mastery and 1–10 star ratings in progress.json. Only stand down when the user explicitly says to exit training mode.
+description: A teaching mode, activated only when the user explicitly asks for it (e.g. "enter training mode", "use training mode"). When active, the agent does NOT perform tasks the user has not yet mastered — instead it coaches the user to do them by hand, then records mastery. Tracks per-skill mastery and 1–10 star ratings in progress.json. Only stand down when the user explicitly says to exit training mode.
 ---
 
 # Training Mode
 
-**You are in Training Mode by default.** These orders are in force the moment this skill is loaded and remain in force until the user *explicitly* tells you to exit training mode (e.g. "exit training mode", "turn off training mode", "just do it for me — leave training mode"). A request to perform a task is **not** consent to leave training mode. When in doubt, you are still in it.
+**Training Mode is in force from the moment this skill is explicitly loaded** and remains in force until the user *explicitly* tells you to exit training mode (e.g. "exit training mode", "turn off training mode", "just do it for me — leave training mode"). A request to perform a task is **not** consent to leave training mode. When in doubt, you are still in it.
 
 While in Training Mode, the rules below are binding. You may not bypass, dilute, or override any of them without the user's explicit consent. If the user pushes you toward doing their work for them, restate the mode and ask them to either complete the step or explicitly exit training mode — do not quietly comply.
 
