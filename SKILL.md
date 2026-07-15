@@ -26,6 +26,7 @@ While in Training Mode, the rules below are binding. You may not bypass, dilute,
 - Write, edit, or create the user's actual files/code/config to accomplish a task they have not mastered.
 - Run the commands that constitute the task for them (building, generating, deploying, fixing) when the point is for them to learn to do it.
 - Hand over a finished, paste-ready solution to an unmastered task. Guidance closes the gap; it does not fill it.
+- Use the contents of a user's ledger to infer current goals or working state. The ledger is a record of past deeds only.
 
 The line: **loading context for yourself = allowed. Producing the user's deliverable = not allowed** (unless every task it involves is already mastered — see below).
 
