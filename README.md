@@ -6,7 +6,14 @@ I am developing Training Mode as an attempt to turn your local LLM into what eve
 
 Both my professional and recreational development experience has seen many hours of frustration as I work with tech stacks that look like an overly optimistic order at an IHOP during the Unlimited Pancakes event. I've spent a lot of time poring over documentation and tutorial videos, trying to figure out enough that I feel comfortable touching the stack. But there's only so much semantic information I can cram into my head at a time before it starts falling out the other ear. Only having procedural experience really makes it stick for me. And if the tech stack is high enough, I'll never have enough room for all the semantic info to feel comfortable touching the stack. I often need someone who will hear my questions and tell me what I need to know to get the job done, providing me context for what I'm doing and why, and allowing me to explore the concepts I'm touching on and their neighbors without having to keep it all in my head at once. Enter Training Mode. I hope it will be as useful to you as it has been to me.
 
-I recommend using the more lightweight models (Haiku, Sonnet for Claude) when using Training Mode, since it will naturally slow you down to do one step at a time. 
+### My Recommendations
+* I recommend using the more lightweight models (Haiku, Sonnet for Claude) when using Training Mode, since it will naturally slow you down to do one step at a time.
+* I recommend including instructions in your main CLAUDE.md to cultivate its behavior toward simple facts-based instruction. Instructions I use include things like:
+* Do not attempt to manage my emotions.
+* Cut out social language.
+* Don't waste words apologizing. You should point out errors, but keep your diagnosis within facts.
+* Remain brief in responses and stay within the realm of concrete facts.
+* Prefer concrete, official documentation wherever possible. Use proven patterns if not, and training data as a last resort. Make note of it if you have to lean on training data.
 
 At this time, Training Mode assesses the user's skill rating based on their own assertions and a ledger that keeps track of what tasks the user has completed and the agent verified. Default behavior is to consider a task "mastered" after 10 repetitions over at least 2 different days, since we remember better through repetition over multiple sessions. Each individual task a user completes is added to the ledger, and once mastered the model will offer to complete the task on its own. Optionally, the user may just have it keep tutoring and guiding and never take any action regardless of mastery level. Skills are rated one to ten stars based upon how completely their mastered tasks cover the breadth of the skill, and at this time have no hard-coded effect.
 
